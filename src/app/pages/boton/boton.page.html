@@ -1,0 +1,50 @@
+
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start" >
+      <ion-back-button
+      defaultHref="/" text="Regresar"
+      color="primary"
+      mode="ios"></ion-back-button>
+      </ion-buttons>
+
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail>
+      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+        {{c.name}}
+
+    </ion-item>
+  </ion-list>
+
+
+  <!--
+
+
+
+  <ion-button routerLink="/alert">
+    Alert
+    </ion-button>
+    <ion-button routerLink="/action-sheet">
+    Action Sheet
+  </ion-button>
+
+  [routerLink]="c.reditectTo" datail
+
+  <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes">
+      <ion-icon name="football"></ion-icon>
+
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+  -->
+</ion-content>
